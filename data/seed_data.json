@@ -1,0 +1,52 @@
+{
+  "district": "Chhatrapati Sambhaji Nagar",
+  "state": "Maharashtra",
+  "totalSites": 25,
+  "flaggedSites": 6,
+  "watersheds": [
+    {
+      "id": "W-MH-CSN-01",
+      "name": "Paithan West Sub-Catchment (43A)",
+      "block": "Paithan",
+      "areaHa": 1420.5,
+      "terrain": "semi_arid",
+      "sitesCount": 7,
+      "boundaryCoordinates": [
+        [19.48, 75.28], [19.64, 75.28], [19.64, 75.42], [19.48, 75.42]
+      ]
+    },
+    {
+      "id": "W-MH-CSN-02",
+      "name": "Gangapur Godavari Basin (12B)",
+      "block": "Gangapur",
+      "areaHa": 1850.0,
+      "terrain": "semi_arid",
+      "sitesCount": 6,
+      "boundaryCoordinates": [
+        [19.70, 74.96], [19.89, 74.96], [19.89, 75.15], [19.70, 75.15]
+      ]
+    },
+    {
+      "id": "W-MH-CSN-03",
+      "name": "Kannad Hill Slope Escarpment (08C)",
+      "block": "Kannad",
+      "areaHa": 2100.2,
+      "terrain": "hilly",
+      "sitesCount": 7,
+      "boundaryCoordinates": [
+        [20.19, 75.08], [20.35, 75.08], [20.35, 75.25], [20.19, 75.25]
+      ]
+    },
+    {
+      "id": "W-MH-CSN-04",
+      "name": "Vaijapur Dryland Corridor (21D)",
+      "block": "Vaijapur",
+      "areaHa": 1675.8,
+      "terrain": "semi_arid",
+      "sitesCount": 5,
+      "boundaryCoordinates": [
+        [19.85, 74.75], [19.98, 74.75], [19.98, 74.95], [19.85, 74.95]
+      ]
+    }
+  ]
+}

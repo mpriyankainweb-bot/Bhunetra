@@ -1,0 +1,6 @@
+{
+  "name": "BhuNetra - AI Geospatial Intelligence for Watersheds",
+  "description": "AI-augmented geospatial analytics platform fusing geo-tagged field photos with satellite NDVI/NDWI trends for evidence-backed watershed monitoring (SIH 2026, PS 26015, Ministry of Rural Development).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

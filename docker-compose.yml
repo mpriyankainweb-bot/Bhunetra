@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_DATA_MODE=DEMO
+      - NODE_ENV=production
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://bhunetra:bhunetra_secret@db:5432/bhunetra_db
+      - DATA_MODE=DEMO
+      - JWT_SECRET=sih_2026_bhunetra_secure_key
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  db:
+    image: postgis/postgis:15-3.4
+    environment:
+      - POSTGRES_USER=bhunetra
+      - POSTGRES_PASSWORD=bhunetra_secret
+      - POSTGRES_DB=bhunetra_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
